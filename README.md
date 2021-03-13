@@ -1,10 +1,7 @@
 # Covid19_ML
 
 ## Positive COVID-19  Diagnosis
-
-Symptoms of COVID-19 can vary from persons to person and may also vary in different age groups.
-
-Some of the commonly reported symptoms include:
+Efficient diagnosis of COVID-19 can reduce the transmission, thereby mitigating the burden on healthcare systems. Prediction models that combine several features can be used to estimate the risk of infection. Symptoms of COVID-19 can vary from persons to person and may also vary in different age groups. Some of the commonly reported symptoms include:
 * new or worsening cough
 * shortness of breath or difficulty breathing
 * temperature equal to or over 38°C
@@ -17,8 +14,32 @@ Some of the commonly reported symptoms include:
 * gastrointestinal symptoms (abdominal pain, diarrhea, vomiting)
 * feeling very unwell
 
+With the rollout of COVID-19 vaccine, we expect a decline in the future infections. But to what extent and when do we expect to see these changes? 
+In this project, we will predict the diagnosis of COVID-19, and also predict the efficacy of the COVID-19 vaccine.
 
-Using a data compilation of the symptoms recorded on testing, this analysis will use machine learning to:
+### Goals
+a.  Using a data compilation of the symptoms recorded on testing, this analysis will use machine learning to:
 
 1. Predict COVID-19 diagnosis given a panel of symptoms
-2. Efficacy of vaccination based on vaccine rollout across Canada
+2. Predict efficacy of vaccination based on vaccine rollout in some countries of the world.
+3. Predict efficacy of vaccinnation based on vaccine rollout across Canada.
+
+b. Visualizing the historical data and predictions in (a).
+
+#### Data Sources
+
+#### DataBase Services
+MongoDB
+
+#### Programming Languages
+1. Python
+2. JavaScript
+3. HMTL
+4. CSS
+5. 
+
+#### Cloud Service
+Heroku
+
+#### Deployment
+A flask app will be created and hosted on Heroku.
