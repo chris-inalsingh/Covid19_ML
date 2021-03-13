@@ -21,4 +21,4 @@ Some of the commonly reported symptoms include:
 Using a data compilation of the symptoms recorded on testing, this analysis will use machine learning to:
 
 1. Predict COVID-19 diagnosis given a panel of symptoms
-2. Efficacy of vaccinnation based on vaccine rollout across Canada
+2. Efficacy of vaccination based on vaccine rollout across Canada
