@@ -1,6 +1,6 @@
 # Covid19_ML
 
-## Positive COVID-19  Diagnosis
+## COVID-19: Diagnosis and Vaccination
 Efficient diagnosis of COVID-19 can reduce the transmission, thereby mitigating the burden on healthcare systems. Prediction models that combine several features can be used to estimate the risk of infection. Symptoms of COVID-19 can vary from persons to person and may also vary in different age groups. Some of the commonly reported symptoms include:
 * new or worsening cough
 * shortness of breath or difficulty breathing
@@ -36,7 +36,11 @@ MongoDB
 2. JavaScript
 3. HMTL
 4. CSS
-5. 
+
+#### Machine Learning Algorithms
+1. Logistic regression
+2. Random Forest
+3. KNN
 
 #### Cloud Service
 Heroku
