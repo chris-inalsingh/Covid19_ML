@@ -28,6 +28,10 @@ b. Visualizing the historical data and predictions in (a).
 
 #### Data Sources
 
+https://www.nature.com/articles/s41746-020-00372-6
+https://ourworldindata.org/covid-vaccinations
+https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/prevention-risks/covid-19-vaccine-treatment/vaccine-rollout.html#a4
+
 #### DataBase Services
 MongoDB
 
