@@ -42,9 +42,10 @@ MongoDB
 4. CSS
 
 #### Machine Learning Algorithms
-1. Logistic regression
-2. Random Forest
-3. KNN
+1. Linear regression
+2. Logistic regression
+3. Random Forest
+4. KNN
 
 #### Cloud Service
 Heroku
