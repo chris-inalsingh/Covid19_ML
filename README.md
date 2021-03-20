@@ -22,7 +22,7 @@ a.  Using a data compilation of the symptoms recorded on testing, this analysis 
 
 1. Predict COVID-19 diagnosis given a panel of symptoms
 2. Predict efficacy of vaccination based on vaccine rollout in some countries of the world.
-3. Predict efficacy of vaccinnation based on vaccine rollout across Canada.
+3. Predict the effect of COVID-19 infections, stringency, on the GDP-per-capita of the countries of the world.
 
 b. Visualizing the historical data and predictions in (a).
 
