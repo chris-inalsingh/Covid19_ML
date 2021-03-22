@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>My trip to Europe</title> -->
+
+  <!-- Custom fonts for this template-->
+  <!-- <link href="static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"> -->
+
+  <!-- Page level plugin CSS-->
+  <!-- <link href="static/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet"> -->
+
+  <!-- Custom styles for this template-->
+  <!-- <link href="static/css/sb-admin.css" rel="stylesheet"> -->
+
+<!-- </head> -->
+
+<body id="page-top">
+  <div id="wrapper">
+
+<!-- {% extends "layout.html" %}
+{% block content %} -->
+
+<!-- <body id="page-top"> -->
+    <div id="content-wrapper">
+
+      <div class="container-fluid">
+
+        <!-- Breadcrumbs-->
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href=>COVID-19: Diagnosis and Vaccination</a>
+          </li>
+        </ol>
+
+        
+        <!-- MAP-->
+        <div class="card mb-3">
+          <div class="card-header">
+            <i class="fas fa-chart-area"></i>
+            Area Chart Example</div>
+          <div class="card-body">
+            <iframe src="map.html" style="width:100%; height:600px;"></iframe>
+          </div>
+        </div>
+
+
+        <!-- Form Example -->
+        <div class="card mb-3">
+          <div class="card-header">
+            <i class="fas fa-table"></i>
+            Let's predict the diagnosis of COVID-19.</div>
+          <div class="card-body">
+            <form action="/index.html" method="POST" class="row">
+              <div class="col-sm-12">
+                <h4 class="card-header bg-info text-white text-center py-4">
+                <strong>Diagnosing COVID-19 infection in persons!</strong>
+                </h4>
+                  <div class="col-4">
+                    <!-- <select name="age" class="browser-default custom-select mb-2" style="font-family: sans-serif"> -->
+                    <input type="text" name="age" class="form-control mb-4" placeholder="What's your age?">
+                      <!-- <option value="" selected disabled>Select your age</option>
+                      <option value="16-19">16 to 19</option>
+                      <option value="20-29">20 to 29</option>
+                      <option value="30-39">30 to 39</option>
+                      <option value="40-49">40 to 49</option>
+                      <option value="above_50">Above 50</option> -->
+                    </select>
+                  </div>
+                  <div class="col-4">
+                    <br>
+                    <select name="state" class="browser-default custom-select mb-2" style="font-family: sans-serif">
+                      <option value="" selected disabled>Select the symptoms</option>
+                      <option value="Alabama">Alabama</option>
+                      <option value="Alaska">Alaska</option>
+                      <option value="Arizona">Arizona</option>
+                      <option value="Arkansas">Arkansas</option>
+                      <option value="California">California</option>
+                      <option value="Colorado">Colorado</option>
+                      <option value="Connecticut">Connecticut</option>
+                      <option value="Delaware">Delaware</option>
+                      <option value="District of Columbia">District of Columbia</option>
+                      <option value="Florida">Florida</option>
+                      <option value="Georgia">Georgia</option>
+                      <option value="Hawaii">Hawaii</option>
+                      <option value="Idaho">Idaho</option>
+                      <option value="Illinois">Illinois</option>
+                      <option value="Indiana">Indiana</option>
+                      <option value="Iowa">Iowa</option>
+                      <option value="Kansas">Kansas</option>
+                      <option value="Kentucky">Kentucky</option>
+                      <option value="Louisiana">Louisiana</option>
+                      <option value="Maine">Maine</option>
+                      <option value="Maryland">Maryland</option>
+                      <option value="Massachusetts">Massachusetts</option>
+                      <option value="Michigan">Michigan</option>
+                      <option value="Minnesota">Minnesota</option>
+                      <option value="Mississippi">Mississippi</option>
+                      <option value="Misouri">Misouri</option>
+                      <option value="Montana">Montana</option>
+                      <option value="Nebraska">Nebraska</option>
+                      <option value="Nevada">Nevada</option>
+                      <option value="New Hampshire">New Hampshire</option>
+                      <option value="New Jersey">New Jersey</option>
+                      <option value="New Mexico">New Mexico</option>
+                      <option value="New York">New York</option>
+                      <option value="North Carolina">North Carolina</option>
+                      <option value="North Dakota">North Dakota</option>
+                      <option value="Ohio">Ohio</option>
+                      <option value="Oklahoma">Oklahoma</option>
+                      <option value="Oregon">Oregon</option>
+                      <option value="Pennsylvania">Pennsylvania</option>
+                      <option value="Rhode Island">Rhode Island</option>
+                      <option value="South Carolina">South Carolina</option>
+                      <option value="South Dakota">South Dakota</option>
+                      <option value="Tennessee">Tennessee</option>
+                      <option value="Texas">Texas</option>
+                      <option value="Utah">Utah</option>
+                      <option value="Vermont">Vermont</option>
+                      <option value="Virginia">Virginia</option>
+                      <option value="Washington">Washington</option>
+                      <option value="West Virginia">West Virginia</option>
+                      <option value="Wisconsin">Wisconsin</option>
+                      <option value="Wyoming">Wyoming</option>
+                    </select>
+                  </div>
+                  <div class="col-4">
+                    <br>
+                    <select name="gender" class="browser-default custom-select mb-2" style="font-family: sans-serif">
+                      <option value="" selected disabled>Select your gender</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- <div class="form-row">
+                  <div class="col-4">
+                    <br>
+                        <select name="Occupation" class="browser-default custom-select mb-2" style="font-family: sans-serif">
+                          <option value="" selected disabled>Select your Occupation</option>
+                          <option value="Comp_math">Computer and Mathematical</option>
+                          <option value="Cons_Extr">Construction and Extraction</option>
+                          <option value="Military">Military</option>
+                          <option value="Arch_Eng">Architecture and Engineering</option>
+                          <option value="Busi_Financ">Business and Financial Operations</option>
+                          <option value="Farm_Fish">Farming, Fishing and Forestry</option>
+                          <option value="Food_Serving">Food Preparation and Serving Related</option>
+                          <option value="Health">Healthcare Practitioners and Technical</option>
+                          <option value="Life_Soc">Life and Social Science</option>
+                          <option value="Mng">Management</option>
+                          <option value="Offic_Adm">Office and Administrative Support</option>
+                          <option value="Prot_Serv">Protective Service</option>
+                        </select>
+                  </div>
+                  <div class="col-4">
+                    <br>
+                        <select name="Marital Status" class="browser-default custom-select mb-2" style="font-family: sans-serif">
+                          <option value="" selected disabled>Select your Marital Status</option>
+                          <option value="Single">Single</option>
+                          <option value="Divorced">Divorced</option>
+                          <option value="Married">Married</option>
+                          <option value="Widowed">Widowed</option>
+                          <option value="Complicated">It's complicated</option>
+                        </select>
+                  </div>
+                  <div class="col-4">
+                    <br>
+                        <select name="income" class="browser-default custom-select mb-2" style="font-family: sans-serif">
+                          <option value="" selected disabled>Select your Annual Income</option>
+                          <option value="0_30000">0 to $30,000</option>
+                          <option value="30001_60000">$30,001 to $60,000 </option>
+                          <option value="60001_100000">$60,001 to $100,000</option>
+                          <option value="100001_500000">$100001 to $500000</option>
+                          <option value="more_500001">More than $500001</option>
+                        </select>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-4">
+                    <br>
+                        <select name="Favorite_vacation" class="browser-default custom-select mb-2" style="font-family: sans-serif">
+                          <option value="" selected disabled>Select your Favorite Vacation Type</option>
+                          <option value="adventure">Adventure</option>
+                          <option value="Beach">Beach</option>
+                          <option value="Historical">Historical</option>
+                          <option value="Party">Party</option>
+                        </select>
+                  </div>
+                  <div class="col-4">
+                    <br>
+                        <select name="FOMO" class="browser-default custom-select mb-2" style="font-family: sans-serif">
+                          <option value="" selected disabled>Are you afraid of missing out (FOMO)?</option>
+                          <option value="yes_FOMO">Totally FOMO</option>
+                          <option value="nah_FOMO">I don't have FOMO</option>
+                        </select>
+                  </div>
+                  <div class="col-4">
+                    <br>
+                        <select name="kind_traveler" class="browser-default custom-select mb-2" style="font-family: sans-serif">
+                          <option value="" selected disabled>Select your type of traveler</option>
+                          <option value="budget">On a budget</option>
+                          <option value="casual">Casual traveler </option>
+                          <option value="highend">Only the best while traveling</option>
+                        </select>
+                  </div> -->
+                <br>
+                <button class="btn btn-info btn-block" style="font-family: sans-serif" type="submit">Submit!</button>
+                <br><br>
+                </div>
+              </form>
+            </div>
+          </div>
+          
+        
+        <!-- footer -->
+        <footer class="sticky-footer bg-white">
+          <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+              <span>Chris, Mone, Bunmi, Nihal 2021</span>
+            </div>
+          </div>
+        </footer>
+
+      </div>
+      <!-- /.content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+</body>
+
+</html>
