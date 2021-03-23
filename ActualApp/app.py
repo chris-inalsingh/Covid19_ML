@@ -12,6 +12,7 @@ from bson import json_util
 import numpy
 import pickle
 import pandas as pd
+import joblib
 
 app = Flask(__name__)
 
@@ -78,8 +79,8 @@ def symptomRoute():
         del i['_id']
 
     dataframe= pd.DataFrame.from_dict(master_list)
-    filename='SVC_model.sav'
-    loaded_model = pickle.load(open(filename,'rb'))
+    filename='ActualApp/SVC_model.sav'
+    loaded_model = joblib.load(filename)
     y_predict = loaded_model.predict(dataframe)
     return y_predict[0]
 
