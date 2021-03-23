@@ -22,12 +22,12 @@ db = client.covid_db
 collection_symptoms_answer=db["symptoms_anwser"]
 
 @app.route('/')
-def GDPindex():
-    return render_template("GDP.html")
-
-@app.route('/symptom')
 def symptomPage():
     return render_template("index.html")
+
+@app.route('/GDP')
+def GDPPage():
+    return render_template("GDP.html")
 
 # #service route
 # #covid GDP data route
