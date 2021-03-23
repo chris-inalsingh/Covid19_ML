@@ -1,30 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <title>My trip to Europe</title> -->
-
-  <!-- Custom fonts for this template-->
-  <!-- <link href="static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"> -->
-
-  <!-- Page level plugin CSS-->
-  <!-- <link href="static/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet"> -->
-
-  <!-- Custom styles for this template-->
-  <!-- <link href="static/css/sb-admin.css" rel="stylesheet"> -->
-
-<!-- </head> -->
-
 <body id="page-top">
   <div id="wrapper">
 
 
-<!-- <body id="page-top"> -->
     <div id="content-wrapper">
 
       <div class="container-fluid">
@@ -34,16 +14,14 @@
         <a href=>COVID-19: Diagnosis</a>
         </ol>
 
-        
         <!-- MAP-->
         <div class="card mb-3">
-          <div class="card-header">
-            <i class="fas fa-chart-area"></i>
-          <div class="card-body">
-            <iframe src="map.html" style="width:100%; height:600px;"></iframe>
+            <div class="card-header">
+              <i class="fas fa-chart-area"></i>
+            <div class="card-body">
+              <iframe src="map.html" style="width:100%; height:600px;"></iframe>
+            </div>
           </div>
-        </div>
-
 
         <!-- Form Example -->
         <div class="card mb-3">
@@ -53,106 +31,65 @@
             <form action="/index.html" method="POST" class="row">
               <div class="col-sm-12">
                 <h4 class="card-header bg-info text-white text-center py-4">
-                <strong>Diagnosing COVID-19 infection in persons!</strong>
+                <strong>COVID-19 symptoms in a person</strong>
                 </h4>
                   <div class="col-4">
-                    <select name="age" class="browser-default custom-select mb-2" style="font-family: sans-serif">
-                      <option value="" selected disabled>Select your age</option>
-                      <option value="below_60">Below 60</option>
-                      <option value="above_60">Above 60</option>
+                    <select name="age_60_and_above" class="browser-default custom-select mb-2" style="font-family: sans-serif">
+                      <option value="" selected disabled>Select your Age</option>
+                      <option value="0">Below 60</option>
+                      <option value="1">Above 60</option>
                     </select>
                   </div>
                   <div class="col-4">
                     <br>
-                    <select name="state" class="browser-default custom-select mb-2" style="font-family: sans-serif">
-                      <option value="" selected disabled>Select the symptoms</option>
-                      <option value="Cough">cough</option>
-                      <option value="Fever">fever</option>
-                      <option value="Sore Throat">sore_throat</option>
-                      <option value="Shortness of Breath">shortness_of_breath</option>
-                      <option value="Headache">head_ache</option>
-                      
+                    <select name="cough" class="browser-default custom-select mb-2" style="font-family: sans-serif">
+                      <option value="" selected disabled>Cough</option>
+                      <option value="0">False</option>
+                      <option value="1">True</option>
                     </select>
                   </div>
                   <div class="col-4">
                     <br>
-                    <select name="gender" class="browser-default custom-select mb-2" style="font-family: sans-serif">
-                      <option value="" selected disabled>Select your gender</option>
-                      <option value="male">Male</option>
-                      <option value="female">Female</option>
+                    <select name="fever" class="browser-default custom-select mb-2" style="font-family: sans-serif">
+                      <option value="" selected disabled>Fever</option>
+                      <option value="0">False</option>
+                      <option value="1">True</option>
+                    </select>
+                  </div>
+                  <div class="col-4">
+                    <br>
+                    <select name="sore_throat" class="browser-default custom-select mb-2" style="font-family: sans-serif">
+                      <option value="" selected disabled>Sore Throat</option>
+                      <option value="0">False</option>
+                      <option value="1">True</option>
+                    </select>
+                  </div>
+                  <div class="col-4">
+                    <br>
+                    <select name="shortness_of_breath" class="browser-default custom-select mb-2" style="font-family: sans-serif">
+                      <option value="" selected disabled>Shortness of breath</option>
+                      <option value="0">False</option>
+                      <option value="1">True</option>
+                    </select>
+                  </div>
+                  <div class="col-4">
+                    <br>
+                    <select name="head_ache" class="browser-default custom-select mb-2" style="font-family: sans-serif">
+                      <option value="" selected disabled>Headache</option>
+                      <option value="0">False</option>
+                      <option value="1">True</option>
+                    </select>
+                  </div>
+                  <div class="col-4">
+                    <br>
+                    <select name="test_indication" class="browser-default custom-select mb-2" style="font-family: sans-serif">
+                      <option value="" selected disabled>Test Indication</option>
+                      <option value="0">Travel Abroad</option>
+                      <option value="1">Contact with confirmed case</option>
+                      <option value="2">Other</option>
                     </select>
                   </div>
                 </div>
-                <!-- <div class="form-row">
-                  <div class="col-4">
-                    <br>
-                        <select name="Occupation" class="browser-default custom-select mb-2" style="font-family: sans-serif">
-                          <option value="" selected disabled>Select your Occupation</option>
-                          <option value="Comp_math">Computer and Mathematical</option>
-                          <option value="Cons_Extr">Construction and Extraction</option>
-                          <option value="Military">Military</option>
-                          <option value="Arch_Eng">Architecture and Engineering</option>
-                          <option value="Busi_Financ">Business and Financial Operations</option>
-                          <option value="Farm_Fish">Farming, Fishing and Forestry</option>
-                          <option value="Food_Serving">Food Preparation and Serving Related</option>
-                          <option value="Health">Healthcare Practitioners and Technical</option>
-                          <option value="Life_Soc">Life and Social Science</option>
-                          <option value="Mng">Management</option>
-                          <option value="Offic_Adm">Office and Administrative Support</option>
-                          <option value="Prot_Serv">Protective Service</option>
-                        </select>
-                  </div>
-                  <div class="col-4">
-                    <br>
-                        <select name="Marital Status" class="browser-default custom-select mb-2" style="font-family: sans-serif">
-                          <option value="" selected disabled>Select your Marital Status</option>
-                          <option value="Single">Single</option>
-                          <option value="Divorced">Divorced</option>
-                          <option value="Married">Married</option>
-                          <option value="Widowed">Widowed</option>
-                          <option value="Complicated">It's complicated</option>
-                        </select>
-                  </div>
-                  <div class="col-4">
-                    <br>
-                        <select name="income" class="browser-default custom-select mb-2" style="font-family: sans-serif">
-                          <option value="" selected disabled>Select your Annual Income</option>
-                          <option value="0_30000">0 to $30,000</option>
-                          <option value="30001_60000">$30,001 to $60,000 </option>
-                          <option value="60001_100000">$60,001 to $100,000</option>
-                          <option value="100001_500000">$100001 to $500000</option>
-                          <option value="more_500001">More than $500001</option>
-                        </select>
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="col-4">
-                    <br>
-                        <select name="Favorite_vacation" class="browser-default custom-select mb-2" style="font-family: sans-serif">
-                          <option value="" selected disabled>Select your Favorite Vacation Type</option>
-                          <option value="adventure">Adventure</option>
-                          <option value="Beach">Beach</option>
-                          <option value="Historical">Historical</option>
-                          <option value="Party">Party</option>
-                        </select>
-                  </div>
-                  <div class="col-4">
-                    <br>
-                        <select name="FOMO" class="browser-default custom-select mb-2" style="font-family: sans-serif">
-                          <option value="" selected disabled>Are you afraid of missing out (FOMO)?</option>
-                          <option value="yes_FOMO">Totally FOMO</option>
-                          <option value="nah_FOMO">I don't have FOMO</option>
-                        </select>
-                  </div>
-                  <div class="col-4">
-                    <br>
-                        <select name="kind_traveler" class="browser-default custom-select mb-2" style="font-family: sans-serif">
-                          <option value="" selected disabled>Select your type of traveler</option>
-                          <option value="budget">On a budget</option>
-                          <option value="casual">Casual traveler </option>
-                          <option value="highend">Only the best while traveling</option>
-                        </select>
-                  </div> -->
                 <br>
                 <button class="btn btn-info btn-block" style="font-family: sans-serif" type="submit">SUBMIT</button>
                 <br><br>
@@ -160,23 +97,12 @@
               </form>
             </div>
           </div>
-          
-        
-        <!-- footer -->
-        <footer class="sticky-footer bg-white">
-          <div class="container my-auto">
-            <div class="copyright text-center my-auto">
-            </div>
-          </div>
-        </footer>
 
       </div>
-      <!-- /.content-wrapper -->
+    
 
     </div>
-    <!-- /#wrapper -->
-
-    <!-- Scroll to Top Button-->
+    
     <a class="scroll-to-top rounded" href="#page-top">
       <i class="fas fa-angle-up"></i>
     </a>
