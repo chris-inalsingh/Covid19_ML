@@ -44,7 +44,7 @@ def GDPRoute():
     return jsonify(master_list)
 
 #symptom data route
-@app.route("/symptom.html",methods=['GET','POST'])
+@app.route("/symptom",methods=['GET','POST'])
 def covid_form():
     if request.method == 'POST':
         cough=request.form['cough']
@@ -66,8 +66,9 @@ def covid_form():
         "test_indication":test_indication
         }
         db.collection_symptoms_answer.insert_one(data).inserted_id
-        return render_template("index.html")
+        return redirect("/", code=302)
     return render_template("index.html")
+    
 
 @app.route("/answer")
 def symptomRoute():
