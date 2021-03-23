@@ -19,13 +19,13 @@
           <div class="card-header">
             <i class="fas fa-table"></i>
           <div class="card-body">
-            <form action="/symptom.html" method="POST" class="row">
+            <form action="/symptom" method="POST" class="row">
               <div class="col-sm-12">
                 <h4 class="card-header bg-info text-white text-center py-4">
                 <strong>COVID-19 symptoms in a person</strong>
                 </h4>
                   <div class="col-4">
-                    <label for="age_60_and_above" accesskey="s">Select an age</label>
+                    <label for="age_60_and_above" accesskey="s">Age :</label>
                     <select name="age_60_and_above" class="browser-default custom-select mb-2" style="font-family: sans-serif">
                       <option value="0">Below 60</option>
                       <option value="1">Above 60</option>
@@ -33,48 +33,56 @@
                   </div>
                   <div class="col-4">
                     <br>
+                    <label for="gender" accesskey="s">Gender :</label>
+                    <select name="gender" class="browser-default custom-select mb-2" style="font-family: sans-serif">
+                      <option value="0">Female</option>
+                      <option value="1">Male</option>
+                    </select>
+                  </div>
+                  <div class="col-4">
+                    <br>
+                    <label for="cough" accesskey="s">Cough :</label>
                     <select name="cough" class="browser-default custom-select mb-2" style="font-family: sans-serif">
-                      <option value="" selected disabled>Cough</option>
                       <option value="0">False</option>
                       <option value="1">True</option>
                     </select>
                   </div>
                   <div class="col-4">
                     <br>
+                    <label for="fever" accesskey="s">Fever :</label>
                     <select name="fever" class="browser-default custom-select mb-2" style="font-family: sans-serif">
-                      <option value="" selected disabled>Fever</option>
                       <option value="0">False</option>
                       <option value="1">True</option>
                     </select>
                   </div>
                   <div class="col-4">
                     <br>
+                    <label for="sore_throat" accesskey="s">Sore throat :</label>
                     <select name="sore_throat" class="browser-default custom-select mb-2" style="font-family: sans-serif">
-                      <option value="" selected disabled>Sore Throat</option>
                       <option value="0">False</option>
                       <option value="1">True</option>
                     </select>
                   </div>
                   <div class="col-4">
                     <br>
+                    <label for="shortness_of_breath" accesskey="s">Shortness of breath :</label>
                     <select name="shortness_of_breath" class="browser-default custom-select mb-2" style="font-family: sans-serif">
-                      <option value="" selected disabled>Shortness of breath</option>
                       <option value="0">False</option>
                       <option value="1">True</option>
                     </select>
                   </div>
                   <div class="col-4">
                     <br>
+                    <label for="head_ache" accesskey="s">Headache :</label>
                     <select name="head_ache" class="browser-default custom-select mb-2" style="font-family: sans-serif">
-                      <option value="" selected disabled>Headache</option>
                       <option value="0">False</option>
                       <option value="1">True</option>
                     </select>
                   </div>
                   <div class="col-4">
                     <br>
+                    <label for="test_indication" accesskey="s">Test Indication :</label>
                     <select name="test_indication" class="browser-default custom-select mb-2" style="font-family: sans-serif">
-                      <option value="" selected disabled>Test Indication</option>
                       <option value="0">Travel Abroad</option>
                       <option value="1">Contact with confirmed case</option>
                       <option value="2">Other</option>
