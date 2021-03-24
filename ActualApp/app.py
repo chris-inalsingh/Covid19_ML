@@ -28,7 +28,7 @@ def symptomPage():
 
 @app.route('/GDP')
 def GDPPage():
-    return render_template("GDP.html")
+    return render_template("prediction.html")
 
 # #service route
 # #covid GDP data route
