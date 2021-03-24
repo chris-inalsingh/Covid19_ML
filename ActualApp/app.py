@@ -83,7 +83,8 @@ def symptomRoute():
     filename='ActualApp/SVC_model.sav'
     loaded_model = joblib.load(filename)
     y_predict = loaded_model.predict(dataframe)
-    return y_predict[0]
+    data =y_predict[0]
+    return render_template("index.html", data=data)
 
 
 if __name__ == "__main__":
