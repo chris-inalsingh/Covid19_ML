@@ -19,3 +19,4 @@ splinter==0.10.0
 SQLAlchemy==1.2.18
 pickleshare==0.7.5
 joblib==1.0.1
+sklearn==0.0
