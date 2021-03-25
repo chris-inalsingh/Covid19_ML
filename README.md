@@ -21,8 +21,7 @@ In this project, we will predict the diagnosis of COVID-19, and also predict the
 a.  Using a data compilation of the symptoms recorded on testing, this analysis will use machine learning to:
 
 1. Predict COVID-19 diagnosis given a panel of symptoms
-2. Predict efficacy of vaccination based on vaccine rollout in some countries of the world.
-3. Predict the effect of COVID-19 infections, stringency, on the GDP-per-capita of the countries of the world.
+2. Predict the effect of COVID-19 infections, stringency, GDP_per_capita and other variables on the cases-per-capita of the countries of the world.
 
 b. Visualizing the historical data and predictions in (a).
 
@@ -43,9 +42,7 @@ MongoDB
 
 #### Machine Learning Algorithms
 1. Linear regression
-2. Logistic regression
-3. Random Forest
-4. KNN
+2. SVC
 
 #### Cloud Service
 Heroku
