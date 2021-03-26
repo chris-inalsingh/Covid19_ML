@@ -21,8 +21,7 @@
   <link rel="stylesheet" type="text/css" href="./static/css/style_influenza.css">
 
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/superhero/bootstrap.min.css" integrity="sha384-HnTY+mLT0stQlOwD3wcAzSVAZbrBp141qwfR4WfTqVQKSgmcgzk+oP0ieIyrxiFO" crossorigin="anonymous">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
@@ -48,25 +47,43 @@
     </div>
     <!-- this is the empty box, fill later-->
    <div class="row">
-      <div class="col-md-2">
-        <div class="panel panel-primary">
-          <div id="data-type" class="panel-body">
-
-            <div class="well">
-              <h7>GDP Prediction</h7>
-              <select id="selDataset" onchange="optionChanged(this.value)"></select>
-            </div>
-            <div class="panel panel-primary">
-
-            </div>
-            <div class="row">
-              <div class="col-md-5">
-                <div id="mapops"></div>
-              </div>
-            </div>
-          </div>
+          <!-- Start of container -->
+    <div class="container">
+      <article class="description-content row">
+        <div class="col-xs-12">
+          <h1 class="description-header">Comparison: GDP per Capita and COVID cases</h1>
+          <hr class="description-hr"/>
+         
         </div>
-      </div>
+        <div class="col-md-6">
+          <h2 class="comparison-header">Original Cases per Capita</h2>
+          <img src="../static/img/Original Cases per Capita.png" alt="Original Cases per Capita" class="comparison-image img-responsive">
+          <hr class="visible-xs visible-sm">
+        </div>
+        <div class="col-md-6">
+          <h2 class="comparison-header">Original Cases per Capita (Total)</h2>
+          <img src="../static/img/Original Cases per Capita (total).png" alt="Original Cases per Capita (total)" class="comparison-image img-responsive">
+          <hr class="visible-xs visible-sm">
+        </div>
+        <div class="col-md-12">
+          <h2 class="comparison-header">Original Cases per Capita (Average)</h2>
+          <img src="../static/img/Original Cases per Capita(average).png" alt="Original Cases per Capita (Average)" class="comparison-image img-responsive">
+          <hr class="visible-xs visible-sm">
+        </div>
+        <div class="col-md-12">
+          <h2 class="comparison-header">Cases per Capita vs Predicted Cases per Capita</h2>
+          <img src="../static/img/TrueCASESvsPredCASES.png" alt="Cases per Capita vs Predicted Cases per Capita" class="comparison-image img-responsive">
+        </div>
+        <div class="col-md-12">
+          <h2 class="comparison-header">Predictive Fit</h2>
+          <img src="../static/img/PredVSTrue.png" alt="Predictive Fit" class="comparison-image img-responsive">
+        </div>
+
+
+      </article>
+    </div>
+    <!-- End of container  -->
+
     </div>
 
 
