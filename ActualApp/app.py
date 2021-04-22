@@ -14,7 +14,9 @@ import pickle
 import pandas as pd
 import joblib
 
-app = Flask(__name__)
+STATIC_FOLDER = 'templates/assets'
+
+app = Flask(__name__, static_folder=STATIC_FOLDER)
 
 
 #connect to MongoDB Atlas database
@@ -23,17 +25,24 @@ db = client.covid_db
 collection_symptoms_answer=db["symptoms_anwser"]
 
 @app.route('/')
-def symptomPage():
+def mainPage():
     return render_template("index.html")
 
 @app.route('/GDP')
 def GDPPage():
-    return render_template("prediction.html")
+    return render_template("GDPprediction.html")
 
 @app.route('/Data')
 def RawDataPage():
     return render_template("data.html")
 
+@app.route('/COVPred')
+def symptomPage():
+    return render_template("COVprediction.html")
+
+@app.route('/visualization')
+def visualPage():
+    return render_template("visualizations.html")
 
 # #service route
 # #covid GDP data route
@@ -71,8 +80,8 @@ def covid_form():
         "test_indication":test_indication
         }
         db.collection_symptoms_answer.insert_one(data).inserted_id
-        return redirect("/", code=302)
-    return render_template("index.html")
+        return redirect("/COVPred", code=302)
+    return render_template("COVprediction.html")
     
 
 @app.route("/answer")
@@ -89,7 +98,7 @@ def symptomRoute():
     loaded_model = joblib.load(filename)
     y_predict = loaded_model.predict(dataframe)
     data =y_predict[0]
-    return render_template("index.html", data=data)
+    return render_template("COVprediction.html", data=data)
 
 
 if __name__ == "__main__":
