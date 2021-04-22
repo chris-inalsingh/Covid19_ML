@@ -80,7 +80,7 @@ def covid_form():
         "test_indication":test_indication
         }
         db.collection_symptoms_answer.insert_one(data).inserted_id
-        return redirect("/", code=302)
+        return redirect("/COVPred", code=302)
     return render_template("COVprediction.html")
     
 
