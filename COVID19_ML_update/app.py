@@ -14,7 +14,9 @@ import pickle
 import pandas as pd
 import joblib
 
-app = Flask(__name__)
+STATIC_FOLDER = 'templates/assets'
+
+app = Flask(__name__, static_folder=STATIC_FOLDER)
 
 
 #connect to MongoDB Atlas database
