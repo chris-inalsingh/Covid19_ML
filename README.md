@@ -17,6 +17,12 @@ Efficient diagnosis of COVID-19 can reduce the transmission, thereby mitigating 
 With the rollout of COVID-19 vaccine, we expect a decline in the future infections. But to what extent and when do we expect to see these changes? 
 In this project, we will predict the diagnosis of COVID-19, and also predict the efficacy of the COVID-19 vaccine.
 
+### Team Members
+1.  Chris Inalsingh
+2.  Bunmi Olakanmi
+3.  Nihal Enoch Joshua
+4.  Moné-Renata Holder Seale 
+ 
 ### Goals
 a.  Using a data compilation of the symptoms recorded on testing, this analysis will use machine learning to:
 
