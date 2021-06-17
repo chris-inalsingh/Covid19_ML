@@ -48,4 +48,4 @@ MongoDB
 Heroku
 
 #### Deployment
-A flask app will be created and hosted on Heroku.
+A flask app was created and hosted on Heroku.
